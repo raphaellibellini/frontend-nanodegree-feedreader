@@ -3,6 +3,11 @@
 In this project several tests were created for a feed reader application, using **Jasmine**.
 
 
+## How to start the app
+
+Just run the file 'index.html'.
+
+
 ## Jasmine
 
 Jasmine is a JavaScript test library that supports Behavior Driven Development (BDD), it is used in conjunction with Test Driven Development (TDD).

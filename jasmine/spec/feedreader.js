@@ -93,8 +93,12 @@ $(function() {
         });
 
         it('there is at least one .entry element in the .feed container', function(done) {
-            // Checks if there is content in the .entry, that is, if it exists.
-            expect($('.entry').length).toBeGreaterThan(0);
+            /* Checks if there is content in the .entry, that is, if it exists.
+             * We should specifically check for .entry elements that are descended .feed.  
+             * Therefore, you must use the selector '.feed .entry' to select the elements.  
+             * This type of selection uses the descending selector technique.
+             */
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
     })
